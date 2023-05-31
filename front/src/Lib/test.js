@@ -1,0 +1,1 @@
+const mamadou = String;

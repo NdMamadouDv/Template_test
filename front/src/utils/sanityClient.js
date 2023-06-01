@@ -1,5 +1,6 @@
 import createImageUrlBuilder from "@sanity/image-url";
-import SanityClient from "next-sanity";
+import { createClient, createPreviewSubscriptionHook } from "next-sanity";
+// import SanityClient from "next-sanity";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
@@ -13,6 +14,7 @@ export const config = {
   // token, // Only if you want to update content with the client
 };
 
-export const sanity = new SanityClient(config);
+// export const sanity = new SanityClient(config);
+export const sanity = createClient(config);
 
 export const urlFor = (source) => createImageUrlBuilder(config).image(source);

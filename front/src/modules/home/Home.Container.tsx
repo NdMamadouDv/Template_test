@@ -3,8 +3,8 @@ import HomeView from "./Home.view";
 import { getOwnerInfoData } from "@/lib/fetchOwnerInfo";
 
 const HomeContainer = () => {
-  //   const ownerInfo = getOwnerInfoData();
-  //   console.log(ownerInfo);
+  const ownerInfo = getOwnerInfoData();
+  console.log(ownerInfo);
   return <HomeView />;
 };
 

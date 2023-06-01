@@ -1,7 +1,8 @@
+import AboutContainer from "@/modules/about/components/About.Container";
 import React from "react";
 
 const about = () => {
-  return <div>about</div>;
+  return <AboutContainer />;
 };
 
 export default about;

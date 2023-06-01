@@ -5,7 +5,7 @@ import HomeContainer from "@/modules/home/Home.Container";
 const Home = () => {
 	return (
 		<>
-			<Layout>
+			<Layout navFixed>
 				<HomeContainer />
 			</Layout>
 		</>

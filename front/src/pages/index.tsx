@@ -6,9 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="text-red-500">Bienvenue sur le test de template</h1>
-      <h2 className="">TEEEEEEEEEEEEEEEEEEEEEFSDQEQSDTTT</h2>
+    <div className=" layout max-w-lg mx-auto min-h-screen">
       <Typography
         variant="lead"
         className="text-3xl text-red-500 "

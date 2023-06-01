@@ -10,7 +10,7 @@ module.exports = {
 			"7xl": [
 				"7rem",
 				{
-					lineHeight: "6,5rem",
+					lineHeight: "4,5rem",
 					letterSpacing: "0.02rem",
 				},
 			],

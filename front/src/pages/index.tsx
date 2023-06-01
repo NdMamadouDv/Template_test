@@ -29,43 +29,13 @@ const Home = () => {
                   technologies pour créer les sites internet de demain.
                 </Typography>
 
-                <Link href="/editor" className="">
+                <Link href="/editor">
                   {" "}
-                  <Typography variant="body-base" className="mt-8">
+                  <Typography variant="body-base">
                     Essayer maintenant
                   </Typography>{" "}
                 </Link>
               </div>
-            </div>
-          </Container>
-        </section>
-        <section className="my-8">
-          <Container className="grid xl:grid-cols-3 items-center justify-center">
-            <div className="">
-              <Image
-                src="/equipe-sur-un-projet.jpg"
-                height={300}
-                width={300}
-                alt=""
-              />
-              <Typography className="" variant="body-sm" weight="font-normal">
-                {" "}
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                cupiditate eos, iste obcaecati amet ut laudantium nostrum
-                aliquam, asperiores reprehenderit non at autem provident itaque,
-                quisquam consectetur qui temporibus repellendus corrupti quos
-                beatae tempore suscipit? Fuga, unde autem. Cupiditate dolor
-                maxime animi temporibus sint cumque quod nesciunt inventore
-                explicabo neque.
-              </Typography>
-            </div>
-            <div className="">
-              <Image src="" height={300} width={300} />
-              <Typography className=""></Typography>
-            </div>
-            <div className="">
-              <Image src="" height={300} width={300} />
-              <Typography className=""></Typography>
             </div>
           </Container>
         </section>

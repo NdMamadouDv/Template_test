@@ -23,7 +23,7 @@ const Home = () => {
                 >
                   Créons ensemble un site web qui vende.
                 </Typography>
-                <Typography variant="lead">
+                <Typography variant="lead" className="text-gray-500">
                   Coder est difficile, et vous n'avez pas de temps. Ca tombe
                   bien, nos équipes de développeur dévoués ont mis en place des
                   technologies pour créer les sites internet de demain.

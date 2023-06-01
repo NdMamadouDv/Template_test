@@ -11,19 +11,18 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <Container className="flex items-center justify-center min-h-screen">
-          <div className="flex items-center gap-2">
-            {" "}
-            <Typography>Bonjour</Typography>
-            <Image
-              src="/firebase-1.svg"
-              width={300}
-              height={300}
-              className="w-12 h-auto"
-              alt=""
-            />
-          </div>
-        </Container>
+        <section className="bg-orange-500/80 ">
+          <Container className="  min-h-screen">
+            <div className=" h-full grid items-center justify-center py-40">
+              <Typography className="h1">
+                Créons ensemble un site qui vende.
+              </Typography>
+              <Typography className="font-sm">
+                Coder est difficile, et
+              </Typography>
+            </div>
+          </Container>
+        </section>
       </Layout>
     </>
   );

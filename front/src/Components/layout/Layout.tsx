@@ -3,7 +3,7 @@ interface Props {
 	navFixed?: boolean;
 }
 
-export default function Layout({ children, navFixed = false }: Props) {
+export default function LayoutBasic({ children, navFixed = false }: Props) {
 	return (
 		<div className="flex flex-col min-h-screen">
 			{/* {navFixed ? <Navigation fixed /> : <Navigation />} */}

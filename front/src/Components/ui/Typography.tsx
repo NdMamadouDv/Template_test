@@ -34,7 +34,7 @@ interface Props {
 export default function Typography({
 	variant = "h1",
 	weight = "regular",
-	theme = "primary",
+	theme = "gray",
 	font = "main",
 	className = "",
 	component: Component = "h1",
@@ -66,13 +66,13 @@ export default function Typography({
 			variantStyle = "text-lg md:text-xl 2xl:text-2xl";
 			break;
 		case "body-base":
-			variantStyle = "text-md md:text-lg 2xl:text-xl";
+			variantStyle = "text-base md:text-lg 2xl:text-xl";
 			break;
 		case "body-sm":
-			variantStyle = "text-sm md:text-md 2xl: text-lg";
+			variantStyle = "text-sm md:text-base 2xl: text-lg";
 			break;
 		case "body-xs":
-			variantStyle = "text-xs md:text-sm 2xl: text-md";
+			variantStyle = "text-xs md:text-sm 2xl: text-base";
 			break;
 	}
 
@@ -93,7 +93,7 @@ export default function Typography({
 			themeStyle = "text-secondary";
 			break;
 		case "gray":
-			themeStyle = "text-gray-700";
+			themeStyle = "text-gray-950";
 			break;
 	}
 

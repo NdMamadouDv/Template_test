@@ -3,6 +3,7 @@ interface Props {
 	isOpen: boolean;
 }
 
+// TODO: Remplacer les svg par des icones react-icons
 const BurgerButton = ({ onClick, isOpen = false }: Props) => {
 	return (
 		<button

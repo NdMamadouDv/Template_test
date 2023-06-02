@@ -1,4 +1,4 @@
-import CardDesignSystem from "@/Components/cards/CardDesignSystem";
+import CardTypographies from "@/Components/cards/CardTypographies";
 import { Container } from "@/Components/layout/Container";
 import Typography from "@/Components/ui/Typography";
 import { v4 } from "uuid";
@@ -25,7 +25,7 @@ const Typographies = () => {
 					Typographies
 				</Typography>
 				{variants?.map((variant) => (
-					<CardDesignSystem
+					<CardTypographies
 						key={v4()}
 						tag={variant}
 					/>

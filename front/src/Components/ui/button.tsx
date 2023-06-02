@@ -6,9 +6,10 @@ interface Props {
 	icon?: { icon: React.ElementType };
 	iconTheme?: "primary" | "secondary" | "gray";
 	iconPosition?: "left" | "right";
+	rounded?: "full" | boolean;
 	disabled?: boolean;
 	isLoading?: boolean;
-	onClick?: () => void;
+	onClick?: (event?: React.MouseEvent<HTMLButtonElement>) => void;
 	children?: React.ReactNode;
 }
 
@@ -18,6 +19,7 @@ export const Button = ({
 	icon,
 	iconTheme = "primary",
 	iconPosition = "right",
+	rounded = true,
 	disabled = false,
 	isLoading,
 	onClick = () => {},
@@ -25,16 +27,15 @@ export const Button = ({
 }: Props) => {
 	let variantStyles: string = "",
 		sizeStyles: string = "",
+		roundStyle: string = "",
 		icoSize: number = 0;
 
 	switch (variant) {
 		case "primary":
-			variantStyles =
-				"bg-primary hover:bg-primary-400 text-white rounded-[100rem]";
+			variantStyles = "bg-primary hover:bg-primary/90 text-white rounded-xl";
 			break;
 		case "secondary":
-			variantStyles =
-				"bg-primary-200 hover:bg-primary-300/50 text-primary rounded-[100rem]";
+			variantStyles = "bg-night hover:bg-night/90 text-white rounded-[100rem]";
 			break;
 		case "ico":
 			if (iconTheme === "primary") {
@@ -53,9 +54,20 @@ export const Button = ({
 			}
 	}
 
+	switch (rounded) {
+		case "full":
+			roundStyle = "rounded-[100rem]";
+			break;
+		case true:
+			roundStyle = "rounded-xl lg: rounded-2xl";
+			break;
+		default:
+			roundStyle = "";
+	}
+
 	switch (size) {
 		case "small":
-			sizeStyles = `text-caption3 font-medium ${
+			sizeStyles = `text-md font-medium ${
 				variant === "ico"
 					? "flex items-center justify-center w-[40px] h-[40px]"
 					: "px-[14px] py-[12px]"
@@ -63,7 +75,7 @@ export const Button = ({
 			icoSize = 17;
 			break;
 		case "medium":
-			sizeStyles = `text-caption2 font-medium ${
+			sizeStyles = `text-lg font-medium ${
 				variant === "ico"
 					? "flex items-center justify-center w-[50px] h-[50px]"
 					: "px-[18px] py-[15px]"
@@ -71,7 +83,7 @@ export const Button = ({
 			icoSize = 20;
 			break;
 		case "large":
-			sizeStyles = `text-caption1 font-medium ${
+			sizeStyles = `text-xl font-medium ${
 				variant === "ico"
 					? "flex items-center justify-center w-[60px] h-[60px]"
 					: "px-[22px] py-[18px]"
@@ -82,7 +94,7 @@ export const Button = ({
 
 	return (
 		<button
-			className={clsx(variantStyles, sizeStyles, icoSize, "")}
+			className={clsx(variantStyles, sizeStyles, roundStyle, icoSize, "")}
 			onClick={onClick}
 			disabled={disabled}>
 			{icon && variant === "ico" ? (

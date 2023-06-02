@@ -1,6 +1,6 @@
 import Typography from "../ui/Typography";
 
-interface Props {
+type Props = {
 	tag:
 		| "display"
 		| "h1"
@@ -12,9 +12,9 @@ interface Props {
 		| "body-sm"
 		| "body-xs"
 		| any;
-}
+};
 
-const CardDesignSystem = ({ tag }: Props) => {
+const CardTypographies = ({ tag }: Props) => {
 	return (
 		<article className="border-2 border-gray-200 p-4">
 			<Typography
@@ -31,4 +31,4 @@ const CardDesignSystem = ({ tag }: Props) => {
 	);
 };
 
-export default CardDesignSystem;
+export default CardTypographies;

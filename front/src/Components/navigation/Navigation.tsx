@@ -11,8 +11,6 @@ interface Props {
 	fixed?: boolean;
 }
 
-// TODO: Intégrer contexte lié au scroll / burger actif
-
 export default function Navigation({ fixed = false }: Props) {
 	const [onTop, setOnTop] = useState<boolean>(true);
 	const [isFixed, setIsFixed] = useState<boolean>(false);
@@ -67,6 +65,10 @@ export default function Navigation({ fixed = false }: Props) {
 			}
 		}
 	}, [deviceWidth]);
+
+	useEffect(() => {
+		document.body.style.overflowY = isBurgerActive ? "hidden" : "auto";
+	}, [isBurgerActive]);
 
 	return (
 		<div

@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  .layout {
-    max-width: 1280px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-inline: 20px;
-  }
+	.layout {
+		max-width: 1280px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-inline: 20px;
+	}
 }

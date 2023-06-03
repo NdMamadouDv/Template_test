@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
+import Navigation from "@/styles/navigation.module.css";
 
 interface Props {
 	href: string;
@@ -45,7 +46,7 @@ export default function ActiveLink({
 			href={href}
 			className={clsx(
 				variantStyle,
-				isActive ? "text-primary" : "hover:text-secondary"
+				isActive ? `${Navigation.activeLink}` : `${Navigation.notActiveLink}`
 			)}>
 			{children}
 		</Link>

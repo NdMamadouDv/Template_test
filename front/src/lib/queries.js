@@ -1,11 +1,9 @@
-export const getOwnerInfo = ` *[_type == "ownerInfo"] | order(_createdAt asc) []{
-    ...,
-    socials[]->
-  }`;
+export const getOwnerInfo = `*[_type == "ownerInfo"][]{
+  ...,
+   socials[]->
+}`;
 
-
-  export const getSocials = `*[_type == "social"][]{
+export const getSocials = `*[_type == "social"][]{
     ...,
   
   }`;
-  

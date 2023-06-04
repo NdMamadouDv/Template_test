@@ -6,6 +6,7 @@ import { navigationLinks } from "@/data/navigationLinks";
 import { navlink } from "@/types/navlink.type";
 import { v4 } from "uuid";
 import { Container } from "@/Components/layout/Container";
+import Typography from "../ui/Typography";
 
 interface Props {
 	fixed?: boolean;
@@ -80,7 +81,11 @@ export default function Navigation({ fixed = false }: Props) {
 				"w-full z-50"
 			)}>
 			<Container className="flex text-white justify-between items-center h-16">
-				<h1>Carpen.</h1>
+				<Typography
+					variant="lead"
+					className="text-white">
+					Netouryeti
+				</Typography>
 				<nav className="hidden lg:flex items-center gap-6">
 					{navigationLinks?.map((link: navlink) =>
 						link.isInternal ? (

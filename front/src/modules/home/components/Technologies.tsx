@@ -5,9 +5,10 @@ import Image from "next/image";
 const Technologies = () => {
   return (
     <section className="my-8 ">
-      <Container className="grid xl:grid-cols-3 items-center justify-center gap-10 border-t">
-        <Typography variant="h2">Notre technologie</Typography>
-        <div className="xl:flex gap-6 items-center justify-center space-y-6">
+      {" "}
+      <Typography variant="h2">Notre technologie</Typography>
+      <Container className="grid xl:grid-cols-2 items-center justify-center gap-10 border-t">
+        <div className="xl:flex flex-col gap-6 items-center justify-center space-y-6">
           <Image
             src="/reunion-equipe.jpg"
             height={550}
@@ -30,7 +31,7 @@ const Technologies = () => {
             sint cumque quod nesciunt inventore explicabo neque.
           </Typography>
         </div>
-        <div className="flex gap-4 items-center justify-center border-t py-8">
+        <div className="xl:flex flex-col gap-4 items-center justify-center border-t py-8">
           <Image src="/femme_tableau.jpg" height={300} width={300} alt="" />
           <Typography
             className="text-gray-500/90"

@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@lottiefiles/lottie-player": "^1.7.1",
 		"@sanity/image-url": "^1.0.2",
 		"@types/node": "20.2.5",
 		"@types/react": "18.2.7",
@@ -20,6 +21,7 @@
 		"firebase": "^9.22.1",
 		"formik": "^2.4.0",
 		"framer-motion": "^10.12.16",
+		"lottie-react": "^2.4.0",
 		"next": "13.4.4",
 		"next-sanity": "^4.3.3",
 		"next-sanity-client": "^1.0.6",

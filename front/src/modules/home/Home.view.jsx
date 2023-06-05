@@ -4,8 +4,8 @@ import Knowledge from "./components/Knowledge";
 import Technologies from "./components/Technologies";
 import { getOwnerInfoData } from "@/lib/fetchOwnerInfo";
 
-const HomeView = async () => {
-  const { ownerInfo } = await getOwnerInfoData();
+const HomeView = () => {
+  // const { ownerInfo } = await getOwnerInfoData();
   // console.log(ownerInfo[0]);
 
   return (

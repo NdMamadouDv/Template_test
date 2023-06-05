@@ -80,11 +80,11 @@ export default function Navigation({ fixed = false }: Props) {
 				isBurgerActive && "h-full bg-gray-950 text-white",
 				"w-full z-50"
 			)}>
-			<Container className="flex text-white justify-between items-center h-16">
+			<Container className="flex text-white justify-between items-center h-20">
 				<Typography
 					variant="lead"
 					className="text-white">
-					Netouryeti
+					NetOrYeti
 				</Typography>
 				<nav className="hidden lg:flex items-center gap-6">
 					{navigationLinks?.map((link: navlink) =>

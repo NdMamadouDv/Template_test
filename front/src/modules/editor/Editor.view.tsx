@@ -1,12 +1,12 @@
 import React from "react";
 import Banner from "./components/Banner";
-import Todo from "./components/Todo";
+import Description from "./components/description/Description";
 
 const EditorView = () => {
 	return (
 		<>
 			<Banner />
-			<Todo />
+			<Description />
 		</>
 	);
 };

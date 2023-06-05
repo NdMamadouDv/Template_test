@@ -6,11 +6,11 @@ export const navigationLinks: navlink[] = [
 		baseUrl: "/",
 		isInternal: true,
 	},
-	// {
-	// 	label: "Editor",
-	// 	baseUrl: "/editor",
-	// 	isInternal: true,
-	// },
+	{
+		label: "Editor",
+		baseUrl: "/editor",
+		isInternal: true,
+	},
 	{
 		label: "Design system",
 		baseUrl: "/design-system",

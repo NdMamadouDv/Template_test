@@ -3,7 +3,7 @@ import BurgerButton from "./Burger";
 import ActiveLink from "./ActiveLink";
 import { useState, useEffect } from "react";
 import { navigationLinks } from "@/data/navigationLinks";
-import { navlink } from "@/types/navlink.type";
+import { navlink } from "../../../types/navlink.type";
 import { v4 } from "uuid";
 import { Container } from "@/Components/layout/Container";
 import Typography from "../ui/Typography";

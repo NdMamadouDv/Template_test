@@ -2,8 +2,10 @@ import { Container } from "@/Components/layout/Container";
 import Typography from "@/Components/ui/Typography";
 import Lottie from "lottie-react";
 import animation from "@/data/Hamster.json";
+import { BsArrowRight } from "react-icons/bs";
 
 import React from "react";
+import Link from "next/link";
 
 const Banner = () => {
 	return (
@@ -24,12 +26,18 @@ const Banner = () => {
 							className="text-white">
 							Créez votre site en un clic !
 						</Typography>
-						<Typography
-							variant="h3"
-							component="h3"
-							className="text-white">
-							Utilisez notre éditeur
-						</Typography>
+
+						<Link
+							href={"./editor/template"}
+							className="flex gap-8 items-center">
+							<Typography
+								variant="h3"
+								component="h3"
+								className="text-white">
+								Utilisez notre éditeur
+							</Typography>
+							<BsArrowRight className="text-3xl text-white" />
+						</Link>
 					</div>
 					<Lottie
 						animationData={animation}

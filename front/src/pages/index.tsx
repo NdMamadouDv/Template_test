@@ -3,7 +3,7 @@ import { getOwnerInfoData } from "@/lib/fetchOwnerInfo";
 import HomeContainer from "@/modules/home/Home.Container";
 
 const Home = ({ owners }) => {
-  console.log(owners);
+  // console.log(owners);
   return (
     <>
       <Layout navFixed>

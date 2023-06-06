@@ -19,9 +19,9 @@ const Hero = () => {
 						<Typography
 							variant="lead"
 							className="lg:max-w-xl">
-							Coder est difficile, et vous n'avez pas de temps. Ca tombe bien,
-							nos équipes de développeur dévoués ont mis en place des
-							technologies pour créer les sites internet de demain.
+							{
+								"Coder est difficile, et vous n'avez pas de temps. Ca tombe bien, nos équipes de développeur dévoués ont mis en place des technologies pour créer les sites internet de demain."
+							}
 						</Typography>
 
 						<Link href="/editor">

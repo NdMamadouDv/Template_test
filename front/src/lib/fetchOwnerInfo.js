@@ -1,4 +1,3 @@
-// import { sanity } from "@/utils/sanityClient";
 import { getOwnerInfo } from "@/lib/queries";
 import { sanity } from "@/utils/sanityClient";
 

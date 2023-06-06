@@ -7,7 +7,7 @@ import { createClient } from "next-sanity";
 // const token = process.env.NEXT_PUBLIC_SANITY_TOKEN;
 
 export const config = {
-  projectId: "cvjuutjf",
+  projectId: process.env.NEXT_PUBLIC_SANITYID,
   dataset: "production",
   apiVersion:"2023-06-06",
   useCdn: true, // set to `true` to fetch from edge cache

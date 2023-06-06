@@ -5,8 +5,9 @@ import Image from "next/image";
 const Knowledge = () => {
   return (
     <section className="my-8">
-      <Typography variant="h2">Notre savoir faire</Typography>
       <Container className="grid xl:grid-cols-3 items-center justify-center gap-10 ">
+        <Typography variant="h2">Notre savoir faire</Typography>
+
         <div className="flex flex-col  gap-4 items-center justify-center">
           <Image
             src="/equipe-sur-un-projet.jpg"

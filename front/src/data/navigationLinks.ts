@@ -16,4 +16,10 @@ export const navigationLinks: navlink[] = [
 		baseUrl: "/design-system",
 		isInternal: true,
 	},
+	{
+		label: "HomeSection1",
+		baseUrl: "/HomeSection1",
+		isInternal: true,
+		
+	},
 ];

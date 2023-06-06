@@ -35,8 +35,8 @@ const initialState = {
 	},
 };
 
-export const editor = createSlice({
-	name: "editior",
+export const sliceEditor = createSlice({
+	name: "editor",
 	initialState,
 	reducers: {
 		setNavigation: (state, action) => {
@@ -45,6 +45,6 @@ export const editor = createSlice({
 	},
 });
 
-export const { setPicturesData } = editor.actions;
+export const { setNavigation } = sliceEditor.actions;
 
-export default editor.reducer;
+export default sliceEditor.reducer;

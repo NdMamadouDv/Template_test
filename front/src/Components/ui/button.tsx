@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 interface Props {
   size?: "small" | "medium" | "large";
-  variant?: "primary" | "secondary" | "ico";
+  variant?: "primary" | "secondary" | "ico" | "customize";
   icon?: { icon: React.ElementType };
   iconTheme?: "primary" | "secondary" | "gray";
   iconPosition?: "left" | "right";
@@ -16,7 +16,7 @@ interface Props {
 
 export const Button = ({
   size = "medium",
-  variant = "primary",
+  variant = "customize",
   icon,
   iconTheme = "primary",
   iconPosition = "right",
@@ -36,8 +36,12 @@ export const Button = ({
     case "primary":
       variantStyles = "bg-primary hover:bg-primary/90 text-white rounded-xl";
       break;
+
     case "secondary":
       variantStyles = "bg-night hover:bg-night/90 text-white rounded-[100rem]";
+      break;
+    case "customize":
+      variantStyles = "";
       break;
     case "ico":
       if (iconTheme === "primary") {

@@ -7,13 +7,29 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      "7xl": [
+      "9xl": [
         "10rem",
         {
-          lineHeight: "8.8rem",
+          lineHeight: "9.8rem",
           letterSpacing: "0.001rem",
         },
       ],
+      "8xl": [
+        "8.5rem",
+        {
+          lineHeight: "7.2rem",
+          letterSpacing: "0.001rem",
+        },
+      ],
+
+      "7xl": [
+        "7.7rem",
+        {
+          lineHeight: "6.2rem",
+          letterSpacing: "0.001rem",
+        },
+      ],
+
       "6xl": [
         "5rem",
         {

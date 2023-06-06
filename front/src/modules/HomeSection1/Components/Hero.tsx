@@ -5,19 +5,19 @@ import React from "react";
 import Link from "next/link";
 const Hero = () => {
   return (
-    <div className="bg-slate-400/80">
+    <div className="bg-slate-400/80 py-16">
       <Container className="py-8">
-        <div className="grid max-w-[80%] mx-auto gap-y-10">
+        <div className="grid max-w-[80%] mx-auto gap-y-10 items-center justify-">
           <Typography
-            variant="display"
+            variant="h1"
             component="h1"
-            className="text-left text-blue-800 font-extrabold"
+            className="text-left text-white font-extrabold"
             font="main"
           >
             {" "}
             Bienvenue dans l'usine
             <Typography
-              variant="display"
+              variant="h1"
               component="span"
               className="text-white  font-extrabold "
               font="main"
@@ -35,10 +35,11 @@ const Hero = () => {
             Bonne visite
           </Typography>
 
-          <Link href="#section1">
+          <Link href="#section1" className="mx-auto">
             <Button
               size="small"
-              className="bg-blue-800 hover:bg-blue-800"
+              variant="customize"
+              className="bg-blue-500 hover:bg-blue-500 text-white "
               rounded="full"
             >
               {" "}

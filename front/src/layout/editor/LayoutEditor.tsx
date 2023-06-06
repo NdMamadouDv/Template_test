@@ -1,4 +1,4 @@
-import Navigation from "../navigation/editor/Navigation";
+import Navigation from "../Components/navigation/editor/Navigation";
 
 interface Props {
 	children: React.ReactNode;

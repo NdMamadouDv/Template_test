@@ -1,4 +1,4 @@
-import { Container } from "@/Components/layout/Container";
+import { Container } from "@/Components/Container";
 import Typography from "@/Components/ui/Typography";
 import Link from "next/link";
 import React from "react";

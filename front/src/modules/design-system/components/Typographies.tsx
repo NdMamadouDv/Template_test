@@ -1,5 +1,5 @@
-import CardTypographies from "@/Components/cards/CardTypographies";
-import { Container } from "@/Components/layout/Container";
+import CardTypographies from "@/modules/design-system/components/cards/CardTypographies";
+import { Container } from "@/Components/Container";
 import Typography from "@/Components/ui/Typography";
 import { v4 } from "uuid";
 

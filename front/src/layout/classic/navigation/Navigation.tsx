@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { navigationLinks } from "@/data/navigationLinks";
 import { navlink } from "../../types/navlink.type";
 import { v4 } from "uuid";
-import { Container } from "@/Components/layout/Container";
+import { Container } from "@/Components/Container";
 import Typography from "../ui/Typography";
 
 interface Props {

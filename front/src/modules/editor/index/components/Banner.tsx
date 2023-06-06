@@ -1,4 +1,4 @@
-import { Container } from "@/Components/layout/Container";
+import { Container } from "@/Components/Container";
 import Typography from "@/Components/ui/Typography";
 import Lottie from "lottie-react";
 import animation from "@/data/Hamster.json";

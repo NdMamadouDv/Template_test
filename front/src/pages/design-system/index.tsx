@@ -1,4 +1,4 @@
-import LayoutBasic from "@/Components/layout/Layout";
+import LayoutBasic from "@/layout/Layout";
 import DesignSystemContainer from "@/modules/design-system/DesignSystem.Container";
 import React from "react";
 

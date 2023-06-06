@@ -1,6 +1,6 @@
-import { Container } from "@/Components/layout/Container";
+import { Container } from "@/Components/Container";
 import Typography from "@/Components/ui/Typography";
-import CardButtons from "@/Components/cards/CardButtons";
+import CardButtons from "@/modules/design-system/components/cards/CardButtons";
 
 const Buttons = () => {
 	return (

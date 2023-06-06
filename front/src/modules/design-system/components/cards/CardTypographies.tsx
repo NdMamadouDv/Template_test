@@ -1,4 +1,4 @@
-import Typography from "../ui/Typography";
+import Typography from "../../../../Components/ui/Typography";
 
 type Props = {
 	tag:

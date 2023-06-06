@@ -1,4 +1,4 @@
-import Layout from "@/Components/layout/Layout";
+import Layout from "@/layout/Layout";
 
 import HomeContainer from "@/modules/home/Home.Container";
 

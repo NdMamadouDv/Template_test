@@ -5,7 +5,7 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<section className="bg-orange-500/80 ">
+		<section className="bg-[#333] text-[#333] ">
 			<Container className="  min-h-screen">
 				<div className=" h-full grid items-center justify-center py-36">
 					<div className="space-y-10 lg:space-y-12">
@@ -13,15 +13,15 @@ const Hero = () => {
 							variant="display"
 							component="h1"
 							weight="medium"
-							className="text-white">
+							className=" text-white ">
 							Créons ensemble un site web qui vend.
 						</Typography>
 						<Typography
 							variant="lead"
-							className="lg:max-w-xl">
-							{
-								"Coder est difficile, et vous n'avez pas de temps. Ca tombe bien, nos équipes de développeur dévoués ont mis en place des technologies pour créer les sites internet de demain."
-							}
+							className="lg:max-w-xl text-white">
+							Coder est difficile, et vous n'avez pas de temps. Ca tombe bien,
+							nos équipes de développeur dévoués ont mis en place des
+							technologies pour créer les sites internet de demain.
 						</Typography>
 
 						<Link href="/editor">

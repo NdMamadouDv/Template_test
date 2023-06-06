@@ -1,4 +1,4 @@
-export const getOwnerInfo = `*[_type == "ownerInfo"][]{
+export const getOwnerInfo = `*[_type == "ownerInfo"][] {
   ...,
    socials[]->
 }`;

@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/utils/sanityClient.js",
+    "src/utils/sanityClient.ts",
     "src/lib/fetchOwnerInfo.js",
     "src/lib/queries.js"
   ],

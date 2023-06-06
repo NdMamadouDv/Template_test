@@ -1,6 +1,6 @@
-// import createImageUrlBuilder from "@sanity/image-url";
-import { createClient, createPreviewSubscriptionHook } from "next-sanity";
-// import SanityClient from "next-sanity-client";
+
+import createImageUrlBuilder from "@sanity/image-url";
+import { createClient } from "next-sanity";
 
 // const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 // const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
@@ -9,10 +9,11 @@ import { createClient, createPreviewSubscriptionHook } from "next-sanity";
 export const config = {
   projectId: "cvjuutjf",
   dataset: "production",
+  apiVersion:"2023-06-06",
   useCdn: true, // set to `true` to fetch from edge cache
 };
 
 // export const sanity = new SanityClient(config);
 export const sanity = createClient({ ...config });
 
-export const urlFor = (source) => createImageUrlBuilder(config).image(source);
+export const urlFor = (source:any) => createImageUrlBuilder(config).image(source);

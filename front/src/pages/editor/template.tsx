@@ -1,7 +1,7 @@
-import React from "react";
+import LayoutEditor from "@/Components/layout/LayoutEditor";
 
 const template = () => {
-	return <div>template</div>;
+	return <LayoutEditor>Template</LayoutEditor>;
 };
 
 export default template;
